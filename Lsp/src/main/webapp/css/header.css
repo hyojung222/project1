@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+/* 구글폰트 연결_'Noto Sans Korean' */
+@import
+	url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Do+Hyeon&family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+	;
+
+/*나눔스퀘어 폰트 */
+@import
+	url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css')
+	;
+
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-size: 1.2em;
+	font-family: 'NanumSquare', sans-serif;
+	/*font-family: "Noto Sans KR", sans-serif;*/
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	background-color: rgb(202, 202, 202);
+	padding-top: 160px;
+}
+
+#wrap {
+	
+}
+
+a {
+	color: #252525;
+	font-weight: 500;
+}
+
+#header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+
+.top {
+	background: linear-gradient(90deg, #1537a7, #0e2d92);
+	height: 80px;
+	/* 추가 */
+	width: 100%;
+	color: #fff;
+	line-height: 80px;
+	position: relative;
+}
+
+/* 로고 감싸고 있음 */
+.top1 {
+	width: 150px;
+	height: 100%;
+	float: left;
+	text-align: center;
+	line-height: 80px;
+	/*  추가 */
+	margin-left: 18%;
+}
+
+.top1 a {
+	color: #fff;
+}
+
+.top2 {
+	/* width: 150px; */
+	height: 100%;
+	/*  추가 */
+	margin-right: 23%;
+	font-weight: 300;
+	font-size: 0.8em;
+	position: absolute;
+	top: 0;
+	right:0;
+}
+
+.bar {
+	height: 3px;
+	background-color: #1537a7;
+	position: absolute;
+	left: 20%;
+	bottom: 0;
+}
+
+.logout a {
+	color: #fff;
+	font-weight: 200;
+	font-size: 0.8em;
+	position: absolute;
+	top: 0;
+	right: 360px;
+}
+
+/* 공지사항, 출퇴근관리, 휴가관리, 업무일지 등을 감싸고 있음 */
+.mainmenu {
+	height: 80px;
+	line-height: 80px;
+	background-color: #eee;
+	position: relative;
+}
+
+.menu {
+	position: relative;
+	width: 60%;
+	/* 1024px */
+	text-align: center;
+	/* 리스트 가로 정렬 */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu>li {
+	/* display: inline-block;  */
+	text-align: center;
+	width: 16.6%;
+}
+
+.submenu>li {
+	position: absolute;
+	top: 80px;
+	right: 0;
+	width: 16.6%;
+	height: 100%;
+	background-color: #eee;
+	border-radius: 10x;
+	opacity: 1.3;
+	display: none;
+}
+
+/*  .mainmenu>ul>li:hover {
+    background-color: #1537a7;
+     
+}  */
+.mainmenu>ul>li>a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	letter-spacing: 0.05em;
+}
+
+.mainmenu>ul>li>a:hover {
+	color: #1537a7;
+}
+
+.submenu>li>a:hover {
+	color: #1537a7;
+}
+
+.contents {
+	width: 1240px;
+	height: 1200px;
+	background-color: #fff;
+	margin-top: 10px;
+	border-radius: 20px;
+	overflow: hidden;
+	
+}
+
+.contents::after {
+	
+}
+
+.sublist {
+	list-style: none;
+}
+
+.title {
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	background: #ddd;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+h2 {
+	color: #1537a7;
+	height: 100px;
+}
